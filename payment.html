@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
+  <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+  <meta name="og:type" content="website" />
+  <meta name="twitter:card" content="photo" />
+  <link rel="stylesheet" type="text/css" href="css/payment.css" />
+  <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
+  <link rel="stylesheet" type="text/css" href="css/globals.css" />
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+</head>
+
+
+
+<body style="margin: 0; background: #eeeeee">
+  <input type="hidden" id="anPageName" name="page" value="payment" />
+  <div class="container-center-horizontal">
+    <form class="payment screen" name="form29" action="form29" method="post">
+      <div class="payment-with-qr-code valign-text-middle inter-bold-black-21px">
+        <span><span class="inter-bold-black-21px">Payment with QR Code</span></span>
+      </div>
+      <img class="line-2" src="img/line-2-1@2x.png" alt="Line 2" />
+      <img class="promptpay_qrcode-1" src="img/promptpay-qrcode-1-1@2x.png" alt="Promptpay_qrcode 1" />
+      <div class="component-6">
+        <img class="vector" src="img/vector-2@2x.png" alt="Vector" />
+        <label for="imageUpload" class="upload-image valign-text-middle inter-bold-white-18px">
+          <span><span class="inter-bold-white-18px">Upload Image</span></span>
+        </label>
+        <input type="file" id="imageUpload" style="display: none;">
+      </div>
+      <p class="please-upload-a-pict valign-text-middle inter-normal-black-17px">
+        <span><span class="inter-normal-black-17px">Please upload a picture to confirm payment</span></span>
+      </p>
+      <div class="overlap-group">
+        <div class="rectangle-21"></div>
+        <a href="payment-success-new.html">
+          <h1 class="title valign-text-middle inter-bold-white-25px">
+            <span><span class="inter-bold-white-25px">Confirm</span></span>
+          </h1>
+        </a>
+      </div>
+    </form>
+  </div>
+  <script>
+    const uploadImageLabel = document.querySelector('.upload-image');
+    const imageUpload = document.getElementById('imageUpload');
+
+    uploadImageLabel.addEventListener('click', () => {
+      // Open the file dialog only if it's not already open
+      if (!imageUpload.value) {
+        imageUpload.click();
+      }
+      
+      if (!isClicked) {
+
+    isClicked = true;
+    }
+
+    let isPopupOpen = false;
+
+
+    });
+
+
+        function openPopup() {
+      if (!isPopupOpen) {
+        // โค้ดเปิด popup ที่นี่
+
+        isPopupOpen = true;  // ตั้งค่าให้ popup เปิดแล้ว
+      }
+    }
+    let isPopupOpen = false;
+
+      document.querySelector('.upload-image').addEventListener('click', () => {
+        if (!isPopupOpen) {
+          // โค้ดเปิด popup ที่นี่
+
+          isPopupOpen = true;  // ตั้งค่าให้ popup เปิดแล้ว
+        }
+});
+
+
+
+  </script>
+</body>
+
+</html>

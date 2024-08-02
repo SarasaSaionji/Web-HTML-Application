@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
+  <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+  <meta name="og:type" content="website" />
+  <meta name="twitter:card" content="photo" />
+  <link rel="stylesheet" type="text/css" href="css/login.css" />
+  <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
+  <link rel="stylesheet" type="text/css" href="css/globals.css" />
+</head>
+
+<body style="margin: 0; background: #eeeeee">
+  <input type="hidden" id="anPageName" name="page" value="login" />
+  <div class="container-center-horizontal">
+    <form>
+      <div class="login screen">
+
+        <!-- merchant login-->
+        <a href="login merchant.html" class="align-self-flex-start "><img class="frame-21" src="img/frame-21-1@2x.png"
+            alt="Frame 21" />
+        </a><!-- merchant login-->
+
+        <!-- logo and picture-->
+        <h1 class="place inter-bold-black-32px">
+          <span class="inter-bold-black-32px">Welcome User</span>
+        </h1>
+
+        <img class="undraw_online_groceries_a02y-1" src="img/undraw-online-groceries-a02y-1-1@2x.png"
+          alt="undraw_online_groceries_a02y 1" />
+        <!-- logo and picture-->
+
+
+
+        <!-- email-->
+        <label for="email">
+          <div class="group">
+
+            <div class="overlap-group overlap">
+              <img class="rectangle rectangle-1" src="img/rectangle-5-1@2x.png" alt="Rectangle 5">
+
+              <input class="email" name="email" placeholder="Email" type="email" id="email" required>
+
+            </div>
+
+          </div>
+        </label><!-- email-->
+
+        <label for="password">
+          <div class="group-3 group"><!-- password-->
+
+            <div class="overlap-group overlap">
+
+              <img class="rectangle rectangle-1" src="img/rectangle-5-1@2x.png" alt="Rectangle 7">
+
+              <input class="passwords" name="password" placeholder="Password" type="password" id="password" required>
+
+            </div>
+
+
+          </div><!-- password-->
+        </label>
+
+        <!-- register-->
+        <div class="overlap-group3">
+          <div class="dont-have-account valign-text-middle">
+            <span>Don't have account ?</span>
+          </div>
+
+          <a href="register-selection.html">
+            <div class="view">
+
+              <div class="text_label valign-text-middle">
+                <span>Register</span>
+              </div>
+
+            </div>
+
+          </a>
+
+        </div><!-- register-->
+
+
+        <div class="botton" onclick="auth()">
+          <div class="overlap-group2 overlap">
+            <img class="rectangle-3 rectangle-1" src="img/rectangle-3-1@2x.png" alt="Rectangle 3" />
+            <div class="started valign-text-middle">
+              <span><span>Started</span> </span>
+            </div>
+          </div>
+        </div>
+
+    </form>
+
+
+  </div>
+  </div>
+
+
+
+  <script>
+    function auth() {
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+
+      if (email == "user123@tni.ac.th" && password == "123456") {
+        window.location.href = "menu-user.html";
+        alert("Login successful as user");
+      }
+      else {
+        alert("Incorrect email or password");
+      }
+    }
+  </script>
+
+
+
+
+</body>
+
+</html>

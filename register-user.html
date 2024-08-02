@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
+  <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+  <meta name="og:type" content="website" />
+  <meta name="twitter:card" content="photo" />
+  <link rel="stylesheet" type="text/css" href="css/register-user.css" />
+  <link rel="stylesheet" type="text/css" href="css/styleguide-2.css" />
+  <link rel="stylesheet" type="text/css" href="css/globals-2.css" />
+</head>
+
+<body style="margin: 0; background: #eeeeee">
+  <input type="hidden" id="anPageName" name="page" value="register-user" />
+  <div class="container-center-horizontal">
+    <div class="register-user screen">
+      <h1 class="place inter-bold-black-32px"><span class="inter-bold-black-32px">Register User</span></h1>
+      <div class="group-1 group">
+        <div class="overlap-group overlap">
+          <img class="rectangle" src="img/rectangle-6-2@2x.png" alt="Rectangle 4" />
+          <div class="username valign-text-middle poppins-normal-gunsmoke-18px">
+            <span><span><input class="poppins-normal-gunsmoke-18px input-with-border" type="text"
+                  placeholder="Username" id="Usercheck"></span> </span>
+          </div>
+        </div>
+      </div>
+      <div class="group-2 group">
+        <div class="overlap-group overlap">
+          <img class="rectangle" src="img/rectangle-6-2@2x.png" alt="Rectangle 5" />
+          <div class="email valign-text-middle poppins-normal-gunsmoke-18px">
+            <span><span><input class="poppins-normal-gunsmoke-18px input-with-border" type="email"
+                  placeholder="Email" id="Emailcheck"></span> </span>
+          </div>
+        </div>
+      </div>
+      <div class="group-3 group">
+        <div class="overlap-group overlap">
+          <img class="rectangle" src="img/rectangle-6-2@2x.png" alt="Rectangle 7" />
+          <div class="password valign-text-middle poppins-normal-gunsmoke-18px">
+            <span>
+              <span>
+                <input class="poppins-normal-gunsmoke-18px input-with-border" type="password" placeholder="Password" id="PasswordCheck">
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="group-4 group">
+        <div class="overlap-group4 overlap">
+          <img class="rectangle-6 rectangle-1" src="img/rectangle-6-2@2x.png" alt="Rectangle 6" />
+          <div class="confirm-password valign-text-middle poppins-normal-gunsmoke-18px">
+            <span><span>
+                <input class="poppins-normal-gunsmoke-18px input-with-border" type="password"
+                  placeholder="Confirm password" id="Password_Confirm_Check">
+
+              </span> </span>
+          </div>
+        </div>
+      </div>
+
+        <div class="group-5 group botton" onclick="auth()">
+          <div class="overlap-group-1">
+            <img class="rectangle-3 rectangle-1" src="img/rectangle-3-2@2x.png" alt="Rectangle 3" />
+            <div class="create-account valign-text-middle inter-bold-gallery-21px">
+              <span><span class="inter-bold-gallery-21px">Create Account</span></span>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+  <script>
+
+      function auth() {
+      var email_check = !!document.getElementById('Emailcheck').value;
+      var password_check = !!document.getElementById('PasswordCheck').value;
+      var password_con_check = !!document.getElementById('Password_Confirm_Check').value;
+      var user_check = !!document.getElementById('Usercheck').value;
+
+      var password_syntax =  document.getElementById('PasswordCheck').value;
+      var password_con_syntax = document.getElementById('Password_Confirm_Check').value;
+
+      if (password_syntax !== password_con_syntax) {
+        // Perform your authentication logic
+        alert("Password not match Please try again.");
+        return;
+      }
+
+      else if (email_check && password_check && password_con_check && user_check) {
+        // Perform your authentication logic
+        window.location.href = "login.html";
+        alert("Create Account Success.");
+
+
+      } else {
+        alert("Please fill in all fields.");
+      }
+      }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+/* screen - food-e */
+
+.food-e {
+  align-items: center;
+  background-color: var(--gallery);
+  border: 1px none;
+  display: flex;
+  flex-direction: column;
+  height: 926px;
+  padding: 60px 0;
+  width: 428px;
+}
+
+.food-e .overlap-group1 {
+  background-image: url(../img/372156152-793276486130744-977564212044286730-n-1-10@2x.png);
+  background-size: 100% 100%;
+  flex-direction: column;
+  min-height: 273px;
+  padding: 10px 18px;
+  width: 428px;
+}
+
+.food-e .overlap-group {
+  background-color: var(--bittersweet);
+  border-radius: 6px;
+  gap: 11px;
+  height: 32px;
+  margin-top: 18px;
+  min-width: 120px;
+  padding: 1px 0;
+}
+
+.food-e .title {
+  height: 43px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 16px;
+  margin-top: 129px;
+  width: 284px;
+}
+
+.food-e .japanese-restaurant {
+  height: 31px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 15px;
+  width: 181px;
+}
+
+.food-e .select-box-container {
+  align-items: flex-start;
+  display: flex;
+  gap: 23px;
+  height: 219px;
+  margin-left: 3.0px;
+  margin-top: 37px;
+  min-width: 365px;
+}
+
+.food-e .beef-rice-bowl {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 9px;
+  min-height: 27px;
+  width: 124px;
+}
+
+.food-e .yakisoba {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 9px;
+  min-height: 27px;
+  width: 124px;
+}
+
+.food-e .salmon-don {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 9px;
+  min-height: 27px;
+  width: 124px;
+}
+
+.food-e .sushi {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 9px;
+  min-height: 27px;
+  width: 124px;
+}
